@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Bitter&family=Josefin+Sans:wght@350&display=swap');
 * {
   margin: auto;
   padding: auto;
@@ -106,8 +107,23 @@
   border-radius: 30px;
   transition: 0.5s;
 }
+#btn2 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: linear-gradient(to right, #505050, #b8b8b8);
+  width: 220px;
+  height: 100%;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+.btn2{
+  
+  width: 220px;
+
+}
 .input-group {
-  top: 180px;
+  top: 120px;
   position: absolute;
   width: 280px;
   transition: 0.5s;
@@ -148,6 +164,19 @@
 }
 #register {
   left: 450px;
+}
+#login2 {
+  left: 50px;
+}
+#register2 {
+  left: 450px;
+}
+.formhost{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: balck;
 }
 @media (max-width: 400px) {
   .hero {
@@ -192,8 +221,22 @@
     border-radius: 30px;
     transition: 0.5s;
   }
+  #btn2 {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 170px;
+    height: 100%;
+    background: linear-gradient(to right, #505050, #b8b8b8);
+    border-radius: 30px;
+    transition: 0.5s;
+  }
+  .btn2{
+    width: 170px;
+  }
+  
   .input-group {
-    top: 160px;
+    top: 120px;
     position: absolute;
     width: 160px;
     transition: 0.5s;
@@ -236,9 +279,28 @@
     left: 450px;
   }
   
+  #login2 {
+    left: 50px;
+  }
+  #register2 {
+    left: 450px;
+  }
+  
   
   #nme1inp {
     width: 220px;
+  }
+  .forimg1A {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    margin: 10px;
+  }
+  .forimg2A {
+    display: block;
+    float: left;
+    margin: 10px;
   }
 }
 
@@ -418,12 +480,33 @@
   width: 50%;
   /* left: 10px; */
 }
-
+.blgline>.txt{
+  position: absolute;
+  top: 80px;
+}
+.txt>h1{
+  font-family: 'Architects Daughter', cursive;
+  font-size: 35px;
+}
+.txt{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 170px 230px;
+  background-color: rgba(255, 255, 255, 0.788);
+  height: 200px;
+  width: 500px;
+  text-align: center;
+}
+.blog-pera::first-letter{
+  font-size: 100px;
+  padding-right: 6px;
+}
 .mnline {
   width: 80%;
 }
 .forimg1 {
-  float: right;
+
   margin: 10px;
 }
 .forimg2 {
@@ -431,8 +514,11 @@
   margin: 10px;
 }
 .blog-pera {
+  width: 90%;
+  text-align: justify;
   font-size: 20px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Josefin Sans', sans-serif;
+  /* font-family: 'Bitter', serif; */
 }
 .bg-blog-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
@@ -440,6 +526,7 @@
 }
 #details {
   display: inline-flex;
+  margin-bottom: 10px;
 }
 .blgcreator form {
   text-align: center;
@@ -621,8 +708,14 @@ footer {
   .left img{
     width: 68.5%;
   }
-  
-  
+  .forimg1A{
+    display: inline-block;
+    width: 40%;
+  }
+  .forimg2A{
+    display: inline-block;
+    width: 40%;
+  }
 }
 
 
@@ -634,32 +727,65 @@ footer {
 }
 .mainhead{
   display: block;
-  color: rgb(46, 46, 46);
-  font-family: monospace;
+  color: rgb(255, 255, 255);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 3em;
   text-align: center;
 }
+.mainhead:hover{
+  color: rgb(0, 166, 207);
+  transition: all 0.4s;
+}
 .abt-cont{
   background-repeat: no-repeat;
-  background-color: rgb(216, 216, 216);
-  /* height: 100vh; */
+  background-color: rgb(153, 173, 182);
+  /* height: 180vh; */
   width: 90%;
   margin: 20px auto;
   /* max-width: 1060px; */
   border-radius: 5px;
-  border: 1px solid #babbae;
+  /* border: 1px solid #babbae; */
   padding: 30px 0px;
 }
+.forimg1A {
+  padding-right: 45px;
+  float: right;
+  margin: 10px;
+}
+.forimg2A {
+  padding-left: 45px;
+  float: left;
+  margin: 10px;
+}
 .abt-1{
-  color: #2c3e50;
-  padding-top: 40px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  background-color: rgba(0, 153, 255, 0.712);
+  text-decoration: underline;
+  font-size: 40px;
+  width: 250px;
+  text-align: center;
+  color: rgb(2, 2, 2);
+  /* padding-top: 40px;
   padding-left: 40px;
   padding-right: 40px;
-  padding-bottom: 10px;
+  padding-bottom: 10px; */
 }
+.abt-1:hover{
+  cursor: pointer;
+  background-color: rgb(150, 148, 148);
+  color: rgba(3, 118, 194, 0.712);
+  transition: all 0.4s;
+}
+
 .abt-pera-1{
-  font-family: sans-serif;
-  text-indent: 7em;
+  font-size: 20px;
+  font-weight: 650;
+  text-align: justify;
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  /* text-indent: 7em; */
   padding-top: 5px;
   padding-left: 60px;
   padding-right: 60px;
