@@ -1,21 +1,24 @@
 var x = document.getElementById("login")
 var y = document.getElementById("register")
 var z = document.getElementById("btn")
+// var x2 = document.getElementById("login2")
+// var y2 = document.getElementById("register2")
+// var z2 = document.getElementById("btn2")
 // console.log(doorhei)
 // if(doorhei < shelfhei){
     //     console.log(shelfhei)
 // }
 
-function incHeight() {
-    var el = document.getElementsByClassName("door-wrap")[0];
-    var el2 = document.getElementsByClassName("catshelf")[0];
-    var doorheight = el.offsetHeight;
-    var shelfheight = el2.offsetHeight;
-        var newdoorheight = doorheight;
-        var newshelfheight = shelfheight - 525;
-        el.style.height = newshelfheight + "px";
-        // incHeight()
-    }
+// function incHeight() {
+//     var el = document.getElementsByClassName("door-wrap")[0];
+//     var el2 = document.getElementsByClassName("catshelf")[0];
+//     var doorheight = el.offsetHeight;
+//     var shelfheight = el2.offsetHeight;
+//         var newdoorheight = doorheight;
+//         var newshelfheight = shelfheight - 525;
+//         el.style.height = newshelfheight + "px";
+//         // incHeight()
+//     }
     
     function register(){
         x.style.left = "-400px"
@@ -31,6 +34,20 @@ function login(){
     y.style.left = "450px"
     z.style.left = "0px"
 }
+//     function register2(){
+//         x2.style.left = "-400px"
+//         y2.style.left = "50px"
+//         if(z2.offsetWidth<100){
+//             z2.style.left = "90px"
+//     }else{
+//         z2.style.left = "110px"
+//     }
+// }
+// function login2(){
+//     x2.style.left = "50px"
+//     y2.style.left = "450px"
+//     z2.style.left = "0px"
+// }
 // -------------------------BLOG PAGE-------------------------
 var authid = document.getElementById("Authnme")
 
